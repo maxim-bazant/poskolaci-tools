@@ -1,11 +1,11 @@
-import './App.css'
+import VocabularyApp from "./flashcard-maker/pages/main/VocabularyApp"
 
 function App() {
   
 
   return (
     <>
-      <h1>First Deployment</h1>
+      <VocabularyApp />
     </>
   )
 }
