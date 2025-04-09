@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Card } from "../../components/Card/Card"; // Ensure you have a Card component
-import styles from "./VocabularyApp.module.scss";
+import { Card } from "./components/Card/Card"; // Ensure you have a Card component
+import styles from "./App.module.scss";
 import html2pdf from "html2pdf.js";
 
-export default function VocabularyApp() {
+export default function FlashCardMakerApp() {
   const [inputValue, setInputValue] = useState("");
   const [words, setWords] = useState<string[]>([]);
   const [images, setImages] = useState<{ type: "image"; src: string }[]>([]);

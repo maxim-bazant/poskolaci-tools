@@ -1,0 +1,17 @@
+.sentenceBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .sentence {
+        height: 100vh;
+        width: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+    }
+}

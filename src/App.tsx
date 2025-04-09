@@ -1,11 +1,16 @@
-import VocabularyApp from "./flashcard-maker/pages/main/VocabularyApp"
+import FlashCardMakerApp from "./tools-pages/flashcard-maker/App"
+import SlideShow from "./tools-pages/slideshow/App"
+
+import MainLayout from "./layout/MainLayout"
 
 function App() {
   
 
   return (
     <>
-      <VocabularyApp />
+      <MainLayout>
+        <div/>
+      </MainLayout>
     </>
   )
 }
