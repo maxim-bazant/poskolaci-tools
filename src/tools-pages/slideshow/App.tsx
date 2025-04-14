@@ -10,7 +10,7 @@ export default function SlideShowApp() {
     }, [input])
 
     return (
-        <div>
+        <div className={styles.container}>
             <textarea 
                 value={input}
                 onChange={(e) => {setInput(e.target.value)}}
@@ -20,7 +20,7 @@ export default function SlideShowApp() {
                 sentences.map((sentence, index) => {
                     return (
                         <div className={styles.sentenceBox} key={index}>
-                            <h1 className={styles.sentence}>{ sentence }.</h1>
+                            <h1 className={styles.sentence}>{ sentence }{ sentence != "" ? "." : null }</h1>
                         </div>
                     )
                 })
